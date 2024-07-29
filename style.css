@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="number"] {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#roundsContainer {
+    max-height: 40vh;
+    overflow: hidden;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#rounds {
+    max-height: 35vh;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+#rounds::-webkit-scrollbar {
+    width: 10px;
+}
+
+#rounds::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#rounds::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+#rounds::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#rounds table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#rounds table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#rounds table th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#rounds table td:nth-child(3),
+#rounds table th:nth-child(3) {
+    text-align: center;
+}
+
+#rounds table th:first-child {
+    width: 30%;
+}
+
+#participantsContainer {
+    max-height: 40vh;
+    overflow-y: hidden;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#participants {
+    max-height: 35vh;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+@media print {
+
+    #participantsContainer,
+    #participants,
+    #roundsContainer,
+    #rounds {
+        max-height: none;
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+    }
+
+    @page {
+        margin: 0;
+    }
+}
+
+#participants::-webkit-scrollbar,
+#rounds::-webkit-scrollbar {
+    width: 10px;
+}
+
+#participants::-webkit-scrollbar-track,
+#rounds::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#participants::-webkit-scrollbar-thumb,
+#rounds::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+#participants::-webkit-scrollbar-thumb:hover,
+#rounds::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
